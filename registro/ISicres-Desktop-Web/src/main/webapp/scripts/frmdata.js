@@ -205,7 +205,7 @@ function cambioValor( Field )
 	if (NoCambiado(Field)){
 		var cantidad = FolderBarWnd.FldDataArr.length;
 
-		strValue = Field.value;
+		strValue = Field.getAttribute("value");
 
 		FolderBarWnd.FldDataArr[cantidad] =
 			 new FolderBarWnd.FldData( Field.getAttribute("FldId"), strValue, Field.name, Field.getAttribute("valueSust"));
